@@ -129,7 +129,8 @@ int main() {
 }
 */
 
-#include <iostream>
+/*
+#include <iostream>         //zad 11
 using namespace std;
 int main() {
     int a;
@@ -156,4 +157,42 @@ int main() {
 
         }
     }
+}
+*/
+
+/*
+#include <iostream>     //zad 12
+using namespace std;
+int main() {
+    int n;
+    double A;
+    double L=0.0;
+    double S=0.0;
+    
+
+    cout << "Podaj n:";
+    cin >> n;
+    for (int i = 1; i <= n; i++) {
+        cout << "Podaj " << i << " liczbe:";
+        cin >> L;
+        S += L;
+
+    }
+    A = S / n;
+        cout << "Srednia arytemtyczna tych liczby wynosi: " << A;
+
+
+
+
+
+}
+*/
+
+#include <iostream>
+using namespace std;
+int main() {
+    for (int i = 100; i >= 0; i--) {
+        cout << i;
+}
+
 }
