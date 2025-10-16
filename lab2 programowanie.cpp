@@ -67,7 +67,7 @@ int main() {
 /*#include <iostream>         //zad 7
 using namespace std;
 int main() {
-    int a;
+    float a;
     for (int i = 0; i < 10; i++) {
         cout << "Podaj liczbe rzeczywista:";
         cin >> a;
@@ -93,3 +93,35 @@ int main() {
 }
 */
 
+/*#include <iostream>     //zad 9
+using namespace std;
+int main() {
+    int n;
+    cout << "Podaj n:";
+    cin >> n; 
+
+    for (int i = 0; i <= 100; i++) {
+        if (i % n == 0) {
+            cout << i << "\n";
+        }
+
+    }
+
+}
+*/
+
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cout << "Podaj n:";
+    cin >> n;
+
+    for (int i = 0; i <= 100; i++) {
+        if (i % n == 0) {
+            cout << i << "\n";
+        }
+
+    }
+
+}
