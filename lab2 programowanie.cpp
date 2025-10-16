@@ -110,18 +110,50 @@ int main() {
 }
 */
 
-#include <iostream>
+/*#include <iostream>     //zad 10
 using namespace std;
 int main() {
     int n;
+    int a=0; 
     cout << "Podaj n:";
     cin >> n;
 
     for (int i = 0; i <= 100; i++) {
         if (i % n == 0) {
-            cout << i << "\n";
+            a++;
+            
         }
 
     }
+    cout << a;
+}
+*/
 
+#include <iostream>
+using namespace std;
+int main() {
+    int a;
+    int b;
+
+    cout << "Podaj a:";
+    cin >> a;
+    cout << "Podaj b:";
+    cin >> b;
+
+    if (a > b) {
+        for (int i = b; i < a; i++) {
+            if (i % 3 == 0) {
+                cout << i <<"\n";
+            }
+        }
+
+    }
+    else {
+        for (int i = a; i < b; i++) {
+            if (i % 3 == 0) {
+                cout << i<<"\n";
+            }
+
+        }
+    }
 }
