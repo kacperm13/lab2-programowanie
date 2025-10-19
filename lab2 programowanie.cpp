@@ -187,12 +187,82 @@ int main() {
 
 }
 */
-
-#include <iostream>
+/*
+#include <iostream>     //zad13
 using namespace std;
 int main() {
     for (int i = 100; i >= 0; i--) {
-        cout << i;
+        cout << i <<"\n";
 }
 
 }
+*/
+/*
+#include <iostream> //zad 14
+using namespace std;
+int main() {
+    int a=0;
+    int b=0;
+    int c=0;
+    cout << "Podaj 3 liczby";
+    cin >> a >> b >> c;
+    if (a < b && a < c) {
+        cout << "Najmniejsza z tych liczb jest rowna: " << a;
+    }
+    if (b < a && b < c) {
+        cout << "Najmniejsza z tych liczb jest rowna: " << b;
+    }
+    if (c < a && c < b) {
+        cout << "Najmniejsza z tych liczb jest rowna: " << c;
+    }
+    if(a == b == c) {
+        cout << "Liczby sa rowne.";
+    }
+    
+    
+
+
+}
+*/
+/*
+#include <iostream> 
+#include <cstdlib>      //zad 15
+using namespace std;
+int main() {
+    int m;
+    int n;
+    cin >> m;
+    cin >> n;
+    for (int i = 0; i < n; i++)
+        cout << rand() % m << "\n";
+
+
+
+}
+*/
+/*
+#include <iostream> 
+#include <cstdlib>      //zad 16
+using namespace std;
+int main() {
+    int lucky;
+    int count=0;
+    cout << "Podaj szczesliwy numerek od 1 do 10: ";
+    cin >> lucky;
+    while (lucky > 10) {
+        cout << "Niepoprawna wartosc. Podaj numerek jeszcze raz.";
+        cin >> lucky;
+    }
+    for (int i = 0; i < 10; i++) {
+        int random;
+        random = rand() % 11;
+        cout << random << "\n";
+            
+        if (lucky == random) {
+            count++;
+            }
+    }
+    cout << "Szczesliwy numerek wylosowano " << count << " razy.";
+
+}
+*/
